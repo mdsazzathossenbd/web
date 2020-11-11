@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.clearfix::before{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*full website*/
+
+.website{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 6px black;
+   
+}
+
+/* logo part*/
+
+.logo{
+    width: 30%;
+    float: left;
+    background: #3498db;
+    text-align: center;
+
+}
+.logo img{
+    max-width: 100%;
+    height: 45px;
+    padding: 0px;
+    color:green;
+}
+
+
+/* menu section*/
+
+.menuber{
+   height: 49px;
+   width: auto;
+}
+.menu{
+  
+    text-transform: capitalize;
+}
+.menu ul{
+    height: 49px;
+    width: 70%;
+    background: #3498db;
+    float: right;
+    text-align: center;
+    
+}
+.menu ul li{
+    
+    display: inline-block;
+    margin-left: -3px;
+    position: relative;
+}
+.menu ul li a{
+    color: white;
+    padding: 15px 38.2px;
+    text-decoration: none;
+    border-right: 1px solid #ddd;
+    display: inline-block; 
+    text-align: center;
+    transition: .3s;
+    background: #3498db;
+  
+}
+.bl{
+    border-left: 1px solid#ddd;
+}
+.menu ul li:hover > a{
+    background: #2980b9;
+}
+
+/* dropdown*/
+
+.menu ul li ul{
+    
+    margin-left: -31px;
+    position: absolute;
+    transition: .6s;
+    z-index: 1;
+}
+.menu ul li ul li{
+    display:inline-block;
+}
+.menu ul li ul li:first-child a{
+    border-left: 0px solid#ddd;
+}
+
+.menu ul li ul li a{
+    width: 37px;
+    padding: 15px 70px;
+    display: inline-block;
+    border-right: 0px;
+    border-bottom-width: 2px;
+    border-top: 1px  solid #ddd;
+}
+/* dropdown hover*/
+
+
+.menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transform-origin: top center;
+}
+.menu ul li:hover ul{
+opacity: 1;
+visibility: visible;
+transform:scale(1)
+}
+
+
+/*banner section*/
+
+.banner{
+    height: 300px;
+     background-image: url(./img/banner.jpg);
+    text-align: center;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    
+    
+}
+
+.banner h2{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    background:rgba(10,20, 15, 0.5);
+    margin-bottom: -5px;
+    transition: .6s;
+  
+}
+.banner h2{
+    opacity: 0;
+    visibility: hidden;
+}
+.banner:hover h2{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*container section*/
+
+.container{
+  text-transform: capitalize;
+  border:0px 1px solid #ddd;
+  background: #ddd;
+  height: 382px;
+}
+
+.notes-view{ 
+    float: left;
+    width: 65%;
+    border: 1px solid bisque;
+    height: 378px;
+    background: #ddd;
+    
+}
+.notes-view div{
+    float: left;
+}
+.notes-view div img{
+    height: 200px;
+    width: 150px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.notes{
+    width: 34%;
+    float: right;
+    border: 1px solid bisque;
+    text-align: center;
+
+}
+.notes h2{
+    background: #ddd;
+    text-align: center;
+}
+.notes ul{
+    
+}
+.notes ul li{
+  list-style: none;
+  text-align: left;
+ 
+  
+
+
+}
+.notes ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 30px;
+    background: whitesmoke;
+    border: 1px solid #ddd;
+}
+
+/* services section*/
+
+.services{
+width: 100%;
+height: 352px;
+background: #3498db;
+text-transform: capitalize;
+
+}
+.seo{ 
+    height: 50;
+    width: 32%;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+
+}
+.seo h2{
+    font-size: 50px;
+}
+.seo i{
+    font-size: 100px;
+}
+.seo p{
+    font-size: 30px;
+    font-style: italic;
+}
+.wb{
+    height: 50;
+    width: 32%;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+.wb h2{
+    font-size: 50px;
+}
+.wb i{
+    font-size: 100px;
+}
+.wb p{
+    font-size: 30px;
+    font-style: italic;
+}
+.mar{
+    height: 50;
+    width: 32%;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+.mar h2{
+    font-size: 50px;
+}
+.mar i{
+    font-size: 100px;
+}
+.mar p{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.about{
+    height: 250px;
+    width: 100%;
+    background: #bdc3c7;
+    text-transform: capitalize;
+
+}
+.about h2{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    font-style:oblique;
+    padding: 10px 0px;
+
+}
+
+.footer{
+    height: 25px;
+    width: 100%;
+   
+}
+.footer p{
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    background: #34495e;
+     padding: 10px  0px;
+     color: white;
+}
